@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS `mlat_lookup` (
+CREATE TABLE IF NOT EXISTS `track_mlat_lookup` (
   `Id` int(11) NOT NULL,
   `Icao` varchar(6) NOT NULL,
   `Callsign` varchar(20) DEFAULT NULL,
@@ -16,6 +16,6 @@ CREATE TABLE IF NOT EXISTS `mlat_lookup` (
 --
 -- Indexes for table `mlat_lookupos`
 --
-ALTER TABLE `mlat_lookupos`
+ALTER TABLE `track_mlat_lookup`
   ADD PRIMARY KEY (`Id`),
   ADD KEY `Icao_Timestamp` (`Icao`,`Timestamp`);

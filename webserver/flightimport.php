@@ -1,14 +1,17 @@
 <?php
-
+// Edit the following section as required
 $databasehost = "hostname here";
 $databasename = "adsb";
 $flightsdatabasetable = "flightstable";
 $lookup_table = "track_mlat_lookup";
 $databaseusername= "username";
 $databasepassword = "password";
+$csvfile = "/srv/www/htdocs/flights/flights.csv";
+// End edits
+
 $fieldseparator = "|";
 $lineseparator = "\n";
-$csvfile = "/srv/www/htdocs/flights/flights.csv";
+
 if(!file_exists($csvfile)) {
 die("File not found. Make sure you specified the correct path.");
 }

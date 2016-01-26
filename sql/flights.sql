@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS `flights` (
+CREATE TABLE IF NOT EXISTS `flightstable` (
   `ID` int(11) NOT NULL,
   `ModeS` varchar(6) CHARACTER SET utf8 NOT NULL,
   `Country` varchar(24) CHARACTER SET utf8 DEFAULT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `flights` (
 --
 -- Indexes for table `flightsos`
 --
-ALTER TABLE `flightsos`
+ALTER TABLE `flightstable`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `LastSeen` (`LastSeen`),
   ADD KEY `ModeS` (`ModeS`),

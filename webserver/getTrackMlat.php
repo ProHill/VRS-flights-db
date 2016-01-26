@@ -1,11 +1,10 @@
 <?php
-
+// Edit the following section as required
 $databasehost = "hostname here";
 $databasename = "adsb";
 $lookup_table = "track_mlat_lookup";
 $databaseusername= "username";
 $databasepassword = "password";
-
 $ch = curl_init();
 
 	$options = [
@@ -15,6 +14,8 @@ $ch = curl_init();
 	    CURLOPT_ENCODING => "gzip",
 	    CURLOPT_URL            => "http://<VRS hostname or IP address>:<port>/VirtualRadar/AircraftList.json?trFmt=f&refreshTrails=1"
 		];
+// End edits
+
 	curl_setopt_array($ch, $options);
 	$data = curl_exec($ch);
 
