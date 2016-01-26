@@ -10,6 +10,7 @@ Code to export Virtual Radar Server flight records and track logs to a MySQL dat
 - [phpMyAdmin](https://www.phpmyadmin.net) is very helpful for viewing your MySQL tables to ensure records are being populated correctly.
 
 ##Instructions
+Note: These instructions are not exhaustive.  You will need to be handy with Windows, Linux, MySQL.  If you encounter issues, please log them here and I will update the documentation.
 
 ### Database schema
 You will need to create a database and two tables on your MySQL database host.
