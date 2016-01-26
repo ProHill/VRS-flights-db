@@ -60,6 +60,7 @@ First, configure Pageant for password-less authentication to your web server as 
 Next, create a PuTTY profile for your web server that will execute the flightimport.php file, as depicted in the following two images.  Make sure you use the correct path to the php binary on your web server.
 ![alt tag](https://raw.github.com/ProHill/VRS-flights-db/master/images/putty1.png)
 ![alt tag](https://raw.github.com/ProHill/VRS-flights-db/master/images/putty2.png)
+
 Save the profile with the name flightimport.
 
 You will now need to use Windows Task Scheduler on your VRS host to run db_query.vbs every 5 minutes, as depicted in the following images.
