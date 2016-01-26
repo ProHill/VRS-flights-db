@@ -63,6 +63,7 @@ Next, create a PuTTY profile for your web server that will execute the flightimp
 Save the profile with the name flightimport.
 
 You will now need to use Windows Task Scheduler on your VRS host to run db_query.vbs every 5 minutes, as depicted in the following images.
+
 ![alt tag](https://raw.github.com/ProHill/VRS-flights-db/master/images/wintask1.png)
 ![alt tag](https://raw.github.com/ProHill/VRS-flights-db/master/images/wintask2.png)
 
