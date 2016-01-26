@@ -38,13 +38,16 @@ Place the files from the windows directory of this repository in your c:\sqlite 
 - db_query.bat
 - db_query.vbs
 - dbquerycommands.txt
+
 Double check all the paths in these files, as your setup may differ.
 
 ###PHP scripts
 Place the following files from the webserver directory of this repository on your web server in a flights directory under the web server's document root (example: /srv/www/htdocs/flights)
 - flightimport.php
 - getTrackMlat.php
+
 You will need to edit both of these files and fill in your database connection information and your VRS hostname and port in the CURLOPT_URL parameter in getTrackMlat.php
+
 Now login to your web server and edit the crontab as follows:
 ```
 crontab -e
