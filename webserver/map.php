@@ -1,10 +1,5 @@
 <?php
-// Change the following 4 lines to reflect your database information
-$servername = "dbhostname";
-$username = "dbusername";
-$password = "dbpassword";
-$dbname = "adsb";
-
+include 'config.php';
 echo '
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -261,9 +256,9 @@ if (isset($_GET['id'])) {
 	$sqlwhere .= 'WHERE ID = ' . $id;
 }
 
-$stmt           = "SELECT * FROM flights " . $sqlwhere;
+$stmt           = "SELECT * FROM " . $flightsdatabasetable . " " . $sqlwhere;
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($databasehost, $databaseusername, $databasepassword, $databasename);
 
 if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);

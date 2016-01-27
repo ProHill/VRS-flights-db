@@ -47,8 +47,9 @@ Double check all the paths in these files, as your setup may differ.
 Place the following files from the webserver directory of this repository on your web server in a flights directory under the web server's document root (example: /srv/www/htdocs/flights)
 - flightimport.php
 - getTrackMlat.php
+- config-example.php
 
-You will need to edit both of these files and fill in your database connection information and your VRS hostname and port in the CURLOPT_URL parameter in getTrackMlat.php
+You will need to edit the config-example.php file and fill in your database connection information and your VRS hostname and port.  *Then rename the file to config.php.*
 
 Now login to your web server and edit the crontab as follows:
 ```

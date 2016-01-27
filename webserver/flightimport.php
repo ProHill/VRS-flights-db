@@ -1,11 +1,6 @@
 <?php
-// Edit the following section as required
-$databasehost = "hostname here";
-$databasename = "adsb";
-$flightsdatabasetable = "flightstable";
-$lookup_table = "track_mlat_lookup";
-$databaseusername= "username";
-$databasepassword = "password";
+include 'config.php';
+// Edit the following line as required
 $csvfile = "/srv/www/htdocs/flights/flights.csv";
 // End edits
 
