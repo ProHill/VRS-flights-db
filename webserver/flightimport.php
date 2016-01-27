@@ -1,8 +1,5 @@
 <?php
 include 'config.php';
-// Edit the following line as required
-$csvfile = "/srv/www/htdocs/flights/flights.csv";
-// End edits
 
 $fieldseparator = "|";
 $lineseparator = "\n";
