@@ -1,5 +1,6 @@
 # VRS-flights-db
 Code to export Virtual Radar Server flight records and track logs to a MySQL database.  This is the code used to power http://flights.hillhome.org.
+Also includes example pages written in PHP to display flight info.
 
 ##Prerequisites
 - VRS installed and running
@@ -73,3 +74,11 @@ You will now need to use Windows Task Scheduler on your VRS host to run db_query
 ![alt tag](https://raw.github.com/ProHill/VRS-flights-db/master/images/wintask2.png)
 
 That should complete the setup.  New flight records will be added to the flights table every 5 minutes, and the track log and MLAT flag will be merged in from the track_mlat_lookup table as part of the import process.
+
+##Displaying Flight Data
+(Work in Progress)
+
+###map.php
+Displays the route and full track log
+- Usage: http://webserver/flights/map.php?id=123456
+  - Where 123456 is the flight's ID number from the database
