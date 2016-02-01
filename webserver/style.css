@@ -1,3 +1,11 @@
+img {
+  vertical-align: middle;
+  }
+  
+table tr {
+  border-bottom: 1px solid #ccc;
+  }
+
 table tr td{
   text-align: center;
   padding:8px;
@@ -6,9 +14,19 @@ table tr td{
   width:10%;
 }
 
+table tr td img {
+    margin: 5px
+}
+
+th.FlightTable {
+  text-align: center;
+  padding: 5px;
+  
+  }
+
 td.RouteOverview, td.TrackedRoute {
-	vertical-align: top;
-	}
+  vertical-align: top;
+  }
 
 .mapcontainer {
     width: 100%;
@@ -134,3 +152,55 @@ form.charts_form{
   padding: 0px;
   padding-bottom:0px;
   }
+
+form.limit {
+margin-bottom:0px;
+padding:0px;
+padding-bottom:0px;
+display: inline;
+}
+
+div.limit {
+margin-bottom:0px;
+padding:0px;
+padding-bottom:0px;
+display: inline;
+float: right;
+margin-right:0px;
+}
+
+label.limit {
+margin-bottom:0px;
+padding:0px;
+padding-bottom:0px;
+display: inline;
+}
+
+select#limit {
+width: auto;
+}
+
+.pagination{
+	text-align: center;
+	width:100%;
+}
+.pagination a{
+	display:inline-block;
+	margin-right:15px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 300;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	white-space: nowrap;
+	padding: 6px 12px;
+	line-height: 1.42857143;
+	border-radius: 4px;
+}
+.pagination a:hover{
+	color:#fff;
+	background-color:#737373;
+}
