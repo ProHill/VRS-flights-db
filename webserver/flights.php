@@ -14,6 +14,15 @@ echo '
 jQuery(document).ready(function() {
 	jQuery("abbr.timeago").timeago();
 	});
+function stopPropagation(e) {
+	if(!e) var e = window.event;
+	    if (e.stopPropagation) {
+       		e.stopPropagation();
+	    } else {
+    		e.cancelBubble = true;
+			e.returnValue = false;
+	    }
+	}
 </script>
 
 <meta content="IE=edge" http-equiv="X-UA-Compatible" />

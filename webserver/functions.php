@@ -23,7 +23,7 @@ function writeFlightTable($result) {
 		
 		echo '</td><td>';		
         if ($row["Registration"] != "") { 
-           	echo '<a href="search.php?Registration='.urlencode($row["Registration"]).'" title="Search for this registration">'.$row["Registration"].'</a>';
+           	echo '<a href="search.php?Registration='.urlencode($row["Registration"]).'" title="Search for this registration">'.$row["Registration"].'</a> <a onclick="stopPropagation(event)" href="http://flightaware.com/live/flight/'.$row["Registration"].'" target="_blank" title="Search on FlightAware" class="fa"><img src="fasource.gif"></a>';
             }
                         
         echo "</td><td>".$row["AircraftModel"];
@@ -38,7 +38,7 @@ function writeFlightTable($result) {
         echo "</td><td>";
         
         if ($row["Callsign"] != "") {
-			echo '<a href="search.php?q='.urlencode($row["Callsign"]).'" title="Search for this callsign">'.$row["Callsign"].'</a>';
+			echo '<a href="search.php?q='.urlencode($row["Callsign"]).'" title="Search for this callsign">'.$row["Callsign"].'</a> <a onclick="stopPropagation(event)" href="http://flightaware.com/live/flight/'.$row["Callsign"].'" target="_blank" title="Search on FlightAware" class="fa"><img src="fasource.gif"></a>';
 			}
 
         // Route
