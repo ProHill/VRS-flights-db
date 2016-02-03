@@ -79,6 +79,9 @@ That should complete the setup.  New flight records will be added to the flights
 ##Displaying Flight Data
 (Work in Progress)
 
+###flights.php
+Displays a flight log with clickable links to the map page
+
 ###map.php
 Displays the route and full track log
 - Usage: http://webserver/flights/map.php?id=123456
