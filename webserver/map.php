@@ -377,15 +377,18 @@ if ($trackarray != null) {
 	}
 	$trackarray = array_merge($trackarray);
 	echo "var Track = [";
+	$i = 1; // Globalization: Latitudes will be odd, Longitudes even
 	foreach ($trackarray as $coord) {
-		if ($coord > 0) {
-			// Latitude
+		if($i % 2){
+			// Odd - Latitude
 			echo "new google.maps.LatLng(" . $coord . ",";
-		} elseif ($coord < 0) {
-			// Longitude
+		} else {
+			// Even - Longitude
 			echo $coord . "), ";
 		}
+		$i++; // Increment counter
 	}
+		
 	$trackFirstLatitude  = $trackarray[0];
 	$trackFirstLongitude = $trackarray[1];
 	$trackLastArray      = array_slice($trackarray, -2, 2, false);
