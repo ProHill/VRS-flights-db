@@ -23,7 +23,7 @@ LOAD DATA LOCAL INFILE ".$pdo->quote($csvfile)." IGNORE INTO TABLE $flightsdatab
 FIELDS TERMINATED BY ".$pdo->quote($fieldseparator)."
 ESCAPED BY '' 
 LINES TERMINATED BY ".$pdo->quote($lineseparator));
-date_default_timezone_set('America/Chicago');
+
 $date = date('m/d/Y h:i:s a');
 echo "Loaded a total of $affectedRows records from this csv file at $date\n";
 

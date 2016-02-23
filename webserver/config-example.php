@@ -8,6 +8,7 @@ $databasename = "adsb";
 $flightsdatabasetable = "flightstable";
 $lookup_table = "track_mlat_lookup";
 $csvfile = "/srv/www/htdocs/flights/flights.csv";
+date_default_timezone_set('America/Chicago');
 $vrshostname = "vrs.hostname.here";
 $vrsport = "8080";
 ?>
