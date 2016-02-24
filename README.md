@@ -44,12 +44,9 @@ Place the files from the windows directory of this repository in your c:\sqlite 
 Double check all the paths in these files, as your setup may differ.
 
 ###PHP scripts
-Place the following files from the webserver directory of this repository on your web server in a flights directory under the web server's document root (example: /srv/www/htdocs/flights)
-- flightimport.php
-- getTrackMlat.php
-- config-example.php
+Place all the files from the webserver directory of this repository onto your web server in a flights directory under the web server's document root (example: /srv/www/htdocs/flights)
 
-You will need to edit the config-example.php file and fill in your database connection information and your VRS hostname and port.  *Then rename the file to config.php.*
+You will need to edit the config-example.php file and fill in your database connection information and your VRS hostname and port, plus username and password if your setup is password protected.  *Then rename the file to config.php.*
 
 Now login to your web server and edit the crontab as follows:
 ```
