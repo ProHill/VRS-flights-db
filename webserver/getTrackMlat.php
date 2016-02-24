@@ -9,6 +9,11 @@ $options = [
     CURLOPT_URL            => "http://$vrshostname:$vrsport/VirtualRadar/AircraftList.json?trFmt=f&refreshTrails=1"
 	];
 curl_setopt_array($ch, $options);
+
+if ( $vrsusername != "" && $vrspassword != "") {
+    curl_setopt($ch, CURLOPT_USERPWD, "$vrsusername:$vrspassword");
+	}
+
 $data = curl_exec($ch);
 
 $data = json_decode($data); 
