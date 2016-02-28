@@ -139,7 +139,6 @@ form select.mapButton{
     outline: 0;
 }
 
-
 form{
   margin-bottom:20px;
   padding:10px;
@@ -160,6 +159,13 @@ padding-bottom:0px;
 display: inline;
 }
 
+.info div{
+	display: inline-block;
+	margin-bottom:2.0em;
+	font-weight:400;
+	margin-right:2.0em;
+}
+
 div.limit {
 margin-bottom:0px;
 padding:0px;
@@ -174,10 +180,6 @@ margin-bottom:0px;
 padding:0px;
 padding-bottom:0px;
 display: inline;
-}
-
-select#limit {
-width: auto;
 }
 
 .pagination{
@@ -203,4 +205,50 @@ width: auto;
 .pagination a:hover{
 	color:#fff;
 	background-color:#737373;
+}
+select#limit {
+width: auto;
+}
+fieldset {
+    padding: .35em .625em .75em;
+    margin: 0 2px;
+    border: 1px solid silver
+}
+form label{
+  display:inline-block;
+    width:200px;
+  margin-bottom:10px;
+  vertical-align: top;
+}
+
+form input[type="text"],
+form textarea,
+form select{
+	width:350px;
+	padding:5px;
+}
+	
+.info span{
+	color:#595959;
+	font-weight:100;
+	padding:0px;
+	margin-right:5px;
+	text-align: left;
+	/* font-size:0.8em; */
+}
+form fieldset{
+	margin-bottom:20px;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+button, select {
+    text-transform: none
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit
 }

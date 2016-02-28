@@ -274,7 +274,10 @@ if ($result->num_rows > 0) {
 	
 	if ($row["Track"] != null) {
 		$trackarray = json_decode($row["Track"]);
-	}
+		}
+	else {
+		$trackarray = "";
+		}
 	
 	echo '<table><thead><tr><th class="RouteOverview">Route Overview</th><th class="TrackedRoute">Tracked Log</th></tr></thead>
 	<tbody><tr><td class="RouteOverview">
