@@ -83,3 +83,6 @@ Displays a flight log with clickable links to the map page
 Displays the route and full track log
 - Usage: http://webserver/flights/map.php?id=123456
   - Where 123456 is the flight's ID number from the database
+
+###search.php
+Search the database based on flight/aircraft details
