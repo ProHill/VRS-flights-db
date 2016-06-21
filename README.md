@@ -23,11 +23,12 @@ grant usage on *.* to vrsdbwriter@localhost identified by 'somepasswordhere';
 grant all privileges on adsb.* to vrsdbwriter@localhost;
 ```
 
-Now import the two .sql files in this repository:
+Now import the three .sql files in this repository:
 ```
 use adsb;
 source path/to/flights.sql
 source path/to/track_mlat_lookup.sql
+source path/to/mlat_cleanup.sql
 ```
 
 ###Install sqlite for Windows
